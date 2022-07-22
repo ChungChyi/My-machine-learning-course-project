@@ -8,7 +8,7 @@ setup(
     license="MIT",
     version="1.0.0",
     description="Sample program to test CI engines",
-    packages=["hello","math_demo"],
+    packages=["hello"],
     classifiers=[
         "Development Status :: 6 - Mature",
         "Environment :: Console",
