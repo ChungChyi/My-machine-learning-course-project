@@ -3,24 +3,24 @@ from math_demo import my_math
 #import requests
 def setUpModule():
     #模块级别前置条件，函数名固定，unittest会自动识别，主要用于文件打开和关闭
-    print('模块级别前置条件运行')
+    print('Module-level preconditions run')
 def tearDownModule():
-    print('模块级别后置条件运行')
+    print('Module-level postconditions run')
 
 
 class test_my_math(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        print('类级别前置条件运行')
+        print('Class-level preconditions run')
     @classmethod
     def tearDownClass(cls):
-        print('类级别后置条件运行')
+        print('Class-level postconditions run')
     def setUp(self):
-        print('前置条件运行')
+        print('preconditions run')
         self.math = my_math(7,8)
         self.math2 = my_math(7,0)
     def tearDown(self):
-        print('后置条件运行')
+        print('postconditions run')
         self.math = None
         self.math2 = None
     def test_add(self):
@@ -47,16 +47,16 @@ class test_my_math(unittest.TestCase):
 class test_my_math2(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        print('类级别前置条件运行')
+        print('Module-level preconditions run')
     @classmethod
     def tearDownClass(cls):
-        print('类级别后置条件运行')
+        print('Module-level postconditions run')
     def setUp(self):
-        print('前置条件运行')
+        print('preconditions run')
         self.math = my_math(7,8)
         self.math2 = my_math(7,0)
     def tearDown(self):
-        print('后置条件运行')
+        print('Module-level postconditions run')
         self.math = None
         self.math2 = None
     def test_add(self):
