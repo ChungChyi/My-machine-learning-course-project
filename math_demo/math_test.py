@@ -1,6 +1,6 @@
 import unittest
 from math_demo import my_math
-import requests
+#import requests
 def setUpModule():
     #模块级别前置条件，函数名固定，unittest会自动识别，主要用于文件打开和关闭
     print('模块级别前置条件运行')
