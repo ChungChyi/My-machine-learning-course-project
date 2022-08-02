@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-
-=======
-This is my math demo to test;
->>>>>>> c4fd25b1dd19835b5afa11c33fd25fa7bfc9bea1
